@@ -22,26 +22,27 @@ public class Solution783 {
         }
         dfs(root.right);
     }
-}
 
-/**
- * Definition for a binary tree node.
- */
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    /**
+     * Definition for a binary tree node.
+     */
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
 
-    TreeNode() {
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
 }

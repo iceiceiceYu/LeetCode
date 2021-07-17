@@ -8,16 +8,16 @@ public class Solution1290 {
         }
         return Integer.parseInt(sb.toString(), 2);
     }
-}
 
-/**
- * Definition for singly-linked list.
- */
-class ListNode {
-    int val;
-    ListNode next;
+    /**
+     * Definition for singly-linked list.
+     */
+    static class ListNode {
+        int val;
+        ListNode next;
 
-    ListNode(int x) {
-        val = x;
+        ListNode(int x) {
+            val = x;
+        }
     }
 }

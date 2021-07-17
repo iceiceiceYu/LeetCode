@@ -1,0 +1,11 @@
+
+V
+java:S4973 "9Use the "equals" method if value comparison was intended.(õ…„Ÿ8ó·ï ˜/
+:
+java:S1659"Declare "n" on a separate line.(½ªÌ•ÿÿÿÿÿ
+8
+java:S3626%"Remove this redundant jump.(ûÁİ…8Üñğ ˜/
+=
+java:S1659""Declare "sepr" on a separate line.(óá»üÿÿÿÿ
+?
+java:S2140")Use "java.util.Random.nextInt()" instead.(ºµé

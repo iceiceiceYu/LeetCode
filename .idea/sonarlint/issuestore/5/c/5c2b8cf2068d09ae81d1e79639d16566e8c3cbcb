@@ -1,0 +1,8 @@
+
+R
+java:S18549"<Remove this useless assignment to local variable "firstIdx".(¸ŸÁŒ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 50 to the 15 allowed.(ñ‚À¬ÿÿÿÿÿ
+V	java:S125O"<This block of commented-out lines of code should be removed.(ƒØ‰Êşÿÿÿÿ
+C
+java:S14819"-Remove this unused "firstIdx" local variable.(¸ŸÁŒ
