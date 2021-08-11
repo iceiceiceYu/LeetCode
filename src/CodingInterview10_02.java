@@ -13,7 +13,7 @@ public class CodingInterview10_02 {
                 counts[str.charAt(i) - 'a']++;
             }
             // 将每个出现次数大于 0 的字母和出现次数按顺序拼接成字符串，作为哈希表的键
-            StringBuffer sb = new StringBuffer();
+            StringBuilder sb = new StringBuilder();
             for (int i = 0; i < 26; i++) {
                 if (counts[i] != 0) {
                     sb.append((char) ('a' + i));
