@@ -15,7 +15,6 @@ public class Solution520 {
                     return false;
                 }
             }
-            return true;
         } else {
             if (chars[1] >= 'A' && chars[1] <= 'Z') {
                 for (int i = 2; i < chars.length; i++) {
@@ -23,16 +22,15 @@ public class Solution520 {
                         return false;
                     }
                 }
-                return true;
             } else {
                 for (int i = 2; i < chars.length; i++) {
                     if (chars[i] < 'a' || chars[i] > 'z') {
                         return false;
                     }
                 }
-                return true;
             }
         }
+        return true;
 //        int length = word.length();
 //        int count = 0;
 //        for (int i = 0; i < length; i++) {

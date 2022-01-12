@@ -5,16 +5,15 @@ public class Solution709 {
         System.out.println(toLowerCase("LOVELY"));
     }
 
-    public static String toLowerCase(String str) {
+    public static String toLowerCase(String s) {
         StringBuilder sb = new StringBuilder();
-        for (char ch : str.toCharArray()) {
+        for (char ch : s.toCharArray()) {
             if (ch >= 'A' && ch <= 'Z') {
-                sb.append((char)(ch + 32));
+                sb.append((char) (ch + 32));
             } else {
                 sb.append(ch);
             }
         }
         return sb.toString();
-//        return str.toLowerCase();
     }
 }
