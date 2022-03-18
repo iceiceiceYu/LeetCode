@@ -13,11 +13,10 @@ public class Solution1342 {
         do {
             if (num % 2 == 0) {
                 num /= 2;
-                count++;
             } else {
                 num -= 1;
-                count++;
             }
+            count++;
         } while (num > 0);
         return count;
     }
