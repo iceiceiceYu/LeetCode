@@ -5,10 +5,10 @@ public class Solution1021 {
         System.out.println(removeOuterParentheses("()()"));
     }
 
-    public static String removeOuterParentheses(String S) {
+    public static String removeOuterParentheses(String s) {
         StringBuilder sb = new StringBuilder();
         int stack = 0;
-        for (char c : S.toCharArray()) {
+        for (char c : s.toCharArray()) {
             if (c == ')') {
                 stack--;
             }
@@ -20,24 +20,5 @@ public class Solution1021 {
             }
         }
         return sb.toString();
-
-//        StringBuilder sb = new StringBuilder();
-//        int stack = 0;
-//        int first = 0, last = 0;
-//
-//        for (char c : S.toCharArray()) {
-//            if (c == '(') {
-//                stack++;
-//                last++;
-//            } else {
-//                stack--;
-//                last++;
-//                if (stack == 0) {
-//                    sb.append(S, first + 1, last - 1);
-//                    first = last;
-//                }
-//            }
-//        }
-//        return sb.toString();
     }
 }
