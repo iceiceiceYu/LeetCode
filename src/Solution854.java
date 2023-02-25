@@ -1,4 +1,4 @@
-public class Sollution854 {
+public class Solution854 {
     int ans;
 
     public int kSimilarity(String s1, String s2) {
