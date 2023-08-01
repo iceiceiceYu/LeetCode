@@ -1,5 +1,5 @@
 public class Solution143 {
-    public static void reorderList(ListNode head) {
+    public void reorderList(ListNode head) {
         if (head == null) {
             return;
         }
@@ -9,29 +9,9 @@ public class Solution143 {
         mid.next = null;
         l2 = reverseList(l2);
         mergeList(l1, l2);
-//        if (head == null) {
-//            return;
-//        }
-//        List<ListNode> list = new ArrayList<>();
-//        ListNode node = head;
-//        while (node != null) {
-//            list.add(node);
-//            node = node.next;
-//        }
-//        int i = 0, j = list.size() - 1;
-//        while (i < j) {
-//            list.get(i).next = list.get(j);
-//            i++;
-//            if (i == j) {
-//                break;
-//            }
-//            list.get(j).next = list.get(i);
-//            j--;
-//        }
-//        list.get(i).next = null;
     }
 
-    public static ListNode middleNode(ListNode head) {
+    public ListNode middleNode(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
         while (fast.next != null && fast.next.next != null) {
@@ -41,7 +21,7 @@ public class Solution143 {
         return slow;
     }
 
-    public static ListNode reverseList(ListNode head) {
+    public ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
         while (curr != null) {
@@ -53,7 +33,7 @@ public class Solution143 {
         return prev;
     }
 
-    public static void mergeList(ListNode l1, ListNode l2) {
+    public void mergeList(ListNode l1, ListNode l2) {
         ListNode l1_tmp;
         ListNode l2_tmp;
         while (l1 != null && l2 != null) {
